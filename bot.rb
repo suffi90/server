@@ -1,4 +1,4 @@
-magic_encoding
+# encoding: utf-8
 
 require 'json'
 require 'rest-client'
