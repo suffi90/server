@@ -1,7 +1,6 @@
 require 'json'
 require 'rest-client'
 
-# load configuration file encoded in json format
 config_file = JSON.parse(File.read('config.json'))
 
 token = config_file['token']
