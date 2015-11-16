@@ -31,6 +31,7 @@ GEM
     httpclient (2.7.0.1)
     ice_nine (0.11.1)
     json (1.8.3)
+    magic_encoding (0.0.2)
     mime-types (2.6.2)
     mimemagic (0.3.0)
     multi_xml (0.5.5)
@@ -88,6 +89,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  magic_encoding
   rest-client
   rhc
   telegram-bot-ruby
