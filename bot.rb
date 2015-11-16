@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-# encoding: utf-8
 require 'json'
 require 'rest-client'
 
@@ -96,8 +94,8 @@ Telegram::Bot::Client.run(token) do |bot|
               plugin.show_usage
             end
           rescue => e
-            puts " #{plugin_name}, check if there are tools missing or wild error: #{e.message}"
-            bot.api.sendMessage(chat_id: message.chat.id, text: "í ½ #{plugin_name} plugin is not working properly on my brain operating system! ğŸš«")
+            puts "[!] Cannot execute plugin #{plugin_name}, check if there are tools missing or wild error: #{e.message}"
+            bot.api.sendMessage(chat_id: message.chat.id, text: "ğŸš« #{plugin_name} plugin is not working properly on my brain operating system! ğŸš«")
           end
         end
 
